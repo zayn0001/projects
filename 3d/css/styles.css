@@ -3,15 +3,16 @@ body {
 	font-size: 16px;
 	color: white;
 	background-color: white;
-	font-family: "Oxygen", sans-serif;
+	font-family: "Quicksand", sans-serif;
 }
 
 #header-nav {
 	background-color: black;
-	font
 	border-radius: 0;
 	border: 0;
 	color: inherit;
+	position: fixed;
+	width: 100%;
 }
 
 .navbar-light .navbar-brand {
@@ -33,6 +34,21 @@ a {
 	width: 100%;
 	flex-basis: auto;
 	justify-content: flex-end;
+}
+
+.samplebackground {
+	background-image: url('../images/samplebackground.png');
+	width: 100%;	
+	height: 56.25vw;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	letter-spacing: 1.4vw;
+	line-height: 6vw;
 }
 
 
