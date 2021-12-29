@@ -7,7 +7,7 @@ body {
 }
 
 #header-nav {
-	background-color: black;
+	background-color: white;
 	border-radius: 0;
 	border: 0;
 	color: inherit;
@@ -16,12 +16,11 @@ body {
 }
 
 .navbar-light .navbar-brand {
-	color: white;
+	color: black;
 }
 
 a:active, a:hover, a:visited {
 	opacity: 1 !important;
-	color: white !important;
 	text-decoration: none;
 }
 
@@ -49,6 +48,10 @@ a {
 	justify-content: center;
 	letter-spacing: 1.4vw;
 	line-height: 6vw;
+}
+
+.about {
+	
 }
 
 
