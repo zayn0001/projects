@@ -73,6 +73,27 @@ a {
 	margin-top: 20px;
 }
 
+tr {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+td {
+	border-color: white;
+    border-style: solid;
+    border-width: 2vw;
+    width: 50%;
+}
+
+table {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+    object-fit: cover;
+    height: 24vw;
+}
 
 @media (max-width: 768px) {
 	.samplebackground{
@@ -85,8 +106,13 @@ a {
 		width: 100%;
 		font-size: 3vw;
 	}
+	td {
+		width: 100%;
+	}
+	img {
+		height: 50vw;
+	}
 }
-
 
 
 
