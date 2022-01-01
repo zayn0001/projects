@@ -65,6 +65,8 @@ a {
 .boxtitle {
 	font-size: 1.8vw;
 	margin-top: 20px;
+	color: #808080;
+
 }
 .boxtext {
 	width: 50%;
@@ -93,6 +95,11 @@ img {
 	width: 100%;
     object-fit: cover;
     height: 24vw;
+}
+
+.marker {
+	color: white;
+	height: 62px;
 }
 
 @media (max-width: 768px) {
