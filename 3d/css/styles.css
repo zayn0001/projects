@@ -93,8 +93,8 @@ tr {
 td {
 	border-color: white;
     border-style: solid;
-    border-width: 2vw;
-    width: 50%;
+    border-width: 1.2vw;
+    width: 33.33%;
 }
 
 table {
@@ -118,6 +118,14 @@ td img {
 .marker {
 	color: white;
 	height: 62px;
+}
+
+.boxtext a {
+	color: royalblue;
+}
+
+.boxtext a:hover {
+	color: darkblue;
 }
 
 @media (max-width: 768px) {
