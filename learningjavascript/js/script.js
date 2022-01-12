@@ -73,5 +73,20 @@ Circle.prototype.getarea = function() {
 var mycircle = new Circle(10);
 console.log(mycircle);
 
+var literalcircle = {
+	radius: 10,
+	getarea: function() {
+		//console.log(this);
+		var self = this;
+		var increaseradius = function () {
+			this.radius = 20;   //when there is a function inside another function,while the outer function's this refers to the object/literal it is in the inner function's this refers to the global window
+			self.radius = 20;
+		};
+		console.log(this.radius);
+		increaseradius();
+		return Math.PI * Math.pow(this.radius, 2);
+	}
+};
 
+console.log(literalcircle.getarea());
 
