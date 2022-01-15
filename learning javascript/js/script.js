@@ -90,3 +90,31 @@ var literalcircle = {
 
 console.log(literalcircle.getarea());
 
+var array = new Array();
+array[0] = "yaakov";
+array[1] = 2;
+array[2] = function (name) {
+	console.log(name);
+};
+array[3] = {course: "lfdkgjlfg"};
+
+array[2]("Mishal");
+
+var names = []; 
+
+for (var i = 0; i<names.length; i++) {}
+
+for (var yo in names) {
+	console.log(names[yo]);
+} 
+
+// IIFEs
+(function (window) {
+	console.log("helloooooo");
+	var amanda = 5;
+	window.amanda = amanda;
+})(window);
+
+
+
+
