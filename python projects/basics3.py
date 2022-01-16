@@ -20,7 +20,7 @@ def get_normed_predictors(file, rotat=0, resize=True):
     im = enhancer.enhance(2.0)
     if resize:
         im = im.resize((100,round(im.height*100/im.width)), Image.ANTIALIAS)
-    im = im.convert("L")#ImageOps.grayscale(im)
+    im = ImageOps.grayscale(im)#im.convert("L")#
     
 
     

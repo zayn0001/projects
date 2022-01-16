@@ -1,3 +1,4 @@
+from audioop import reverse
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import preprocessing
 from sklearn.metrics import accuracy_score
@@ -6,6 +7,7 @@ import pandas as pd
 import basics3
 import creatingcsv2
 import glob
+from sklearn.ensemble import RandomForestClassifier
 
 data = pd.read_csv("data1.csv", index_col=False)
 predictors = data.drop(["outcomes"], axis=1)
@@ -44,5 +46,21 @@ df = pd.DataFrame(testdata)
 df["north"] = testnorth
 df["south"] = testsouth
 df.columns = creatingcsv2.columns
+print(knn.predict(df))
 print(accuracy_score(knn.predict(df), range(1,11)))
 knn.predict(df)
+
+clf = RandomForestClassifier(max_depth=4, random_state=0)
+clf.fit(predictors, outcomes)
+print(clf.predict(df))
+print(accuracy_score(clf.predict(df), range(1,11)))
+secondmost = []
+for i in range(len(knn.predict(df))):
+    listofelem = list(clf.predict_proba(df)[i])
+    listofelem.sort(reverse=True)
+    element = listofelem[1]
+    #print(element)
+    secondmost.append(list(clf.predict_proba(df)[i]).index(element))
+print(secondmost)
+
+
