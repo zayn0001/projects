@@ -23,20 +23,20 @@ import pandas as pd
 #for ind in range(len(booleans)):
 #    outcomes[ind] = int(booleans[ind])
   
-data = pd.read_csv('C:\\Users\\mishal\\Desktop\\wine.csv', encoding='utf-8')
+data = pd.read_csv('wine.csv', encoding='utf-8')
 data = pd.DataFrame(data)
 colors = data['color']
 is_red = [(color=='red')*1 for color in colors]
 data['color'] = is_red
-print(data)
+#print(data)
 #predictors = np.transpose(np.array([data['sulphates'], data['alcohol']]))[:100]
 outcomes = np.array(data['high_quality'])
 predictors = data.drop(['high_quality'], axis=1)
-print(predictors)
+#print(predictors)
 
 from sklearn import preprocessing
 standard_predictors = preprocessing.scale(predictors)
-print(standard_predictors)
+#print(standard_predictors)
 
 def find_mode(total):
     (mode_list, count) = ss.mstats.mode(total)
@@ -104,4 +104,8 @@ sk_predictions = knn.predict(standard_predictors)
 #my_predictions = np.array([knn_predict(p, standard_predictors, outcomes) for p in standard_predictors])
 
 #print(100*np.mean(my_predictions==outcomes))
-print(100*np.mean(sk_predictions==outcomes))
+#print(100*np.mean(sk_predictions==outcomes))
+
+
+
+print(outcomes)
