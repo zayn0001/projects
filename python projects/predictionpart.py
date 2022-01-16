@@ -10,7 +10,7 @@ import glob
 data = pd.read_csv("data1.csv", index_col=False)
 predictors = data.drop(["outcomes"], axis=1)
 outcomes = data["outcomes"]
-knn = KNeighborsClassifier(n_neighbors = 2)
+knn = KNeighborsClassifier(n_neighbors = 1)
 #standardpredictors = preprocessing.scale(predictors)
 knn.fit(predictors, outcomes)
 
@@ -18,6 +18,7 @@ knn.fit(predictors, outcomes)
 
 
 sk_predictions = knn.predict(predictors)
+print(sk_predictions)
 print(accuracy_score(sk_predictions, outcomes))
 
 testdata = []
@@ -32,7 +33,7 @@ for png in testpngs:
         #print(basics2.get_normed_predictors("c:/Users/Mishal/Desktop/testing.png", rotation))
 
 
-test2 = basics3.get_normed_predictors("c:/Users/Mishal/Desktop/constellations/ursa_major.png",0)
+test2 = basics3.get_normed_predictors("c:/Users/Mishal/Desktop/constellations/ursa_major.png")
 test2.append(1)
 test2.append(0)
 test2 = [test2]

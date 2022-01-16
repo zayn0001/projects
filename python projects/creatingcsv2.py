@@ -14,11 +14,11 @@ north = []
 south = []
 i = 1
 for png in const_pngs:
-    for rotation in range(0, 460, 20):    
-        predictors.append(basics3.get_normed_predictors(png, rotation))
-        outcomes.append(i)
-        north.append(basics3.checknorth[png.split("\\")[-1].split(".png")[0]])
-        south.append(basics3.checksouth[png.split("\\")[-1].split(".png")[0]])
+    #for rotation in range(0, 460, 20):    
+    predictors.append(basics3.get_normed_predictors(png))
+    outcomes.append(i)
+    north.append(basics3.checknorth[png.split("\\")[-1].split(".png")[0]])
+    south.append(basics3.checksouth[png.split("\\")[-1].split(".png")[0]])
     i = i+1
 
 
