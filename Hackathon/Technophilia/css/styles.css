@@ -51,6 +51,7 @@ textarea {
 	height: 5vw;
 	display: flex;
     align-items: center;
+	padding: 10px;
 }
 
 .alt1 {
