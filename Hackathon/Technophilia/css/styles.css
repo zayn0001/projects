@@ -22,6 +22,7 @@ h1 {
 
 .container {
 	padding: 5vw;
+	min-height: 25vw;
 }
 
 .radio-text {
