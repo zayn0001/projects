@@ -4,10 +4,12 @@
 * {
 	font-size: 2.5vw;
 	color: black;
-	background-color: #DDDDDD;
+	background-color: #F4F1DE;
 	font-family: "Quicksand", sans-serif;
 }
-
+ body {
+	background-color: #F4F1DE;
+ }
 
 .myform {
 	-webkit-transform:scale(1);
@@ -23,6 +25,7 @@ h1 {
 .container {
 	padding: 5vw;
 	min-height: 25vw;
+	background-color: #81B29A;
 }
 
 .radio-text {
@@ -51,13 +54,13 @@ textarea {
 }
 
 .alt1 {
-	background-color:#F05454;
-	color: black;
+	background-color:#F2CC8F;
+	color: #3D405B;
 }
 
 .alt2 {
-	background-color:#30475E;
-	color: #dcdde1;
+	background-color:#3D405B;
+	color: #F2CC8F;
 }
 
 .input-text {
