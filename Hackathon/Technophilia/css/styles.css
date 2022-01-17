@@ -7,6 +7,10 @@
 	font-family: "Quicksand", sans-serif;
 }
 
+body{
+	margin: 50px;
+}
+
 .myform {
 	-webkit-transform:scale(1);
 	-moz-transform:scale(1);
