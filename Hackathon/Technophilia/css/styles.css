@@ -21,7 +21,7 @@ h1 {
 }
 
 .container {
-	padding: 20px;
+	padding: 5vw;
 }
 
 .radio-text {
@@ -47,7 +47,7 @@ textarea {
 	height: 5vw;
 	display: flex;
     align-items: center;
-	padding-left: 10px;
+	padding-left: 2.5vw;
 }
 
 .input-text {
