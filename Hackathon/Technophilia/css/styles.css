@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+	font-size: 2.5vw;
+	color: black;
+	background-color: white;
+	font-family: "Quicksand", sans-serif;
+	/**font-family: 'Arima Madurai', cursive;**/
+}
+
+h1 {
+	text-align: center
+}
+
+.container {
+	padding: 20px;
+}
+.content {
+	height: 10vw;
+	
+}
+
+.radio-text {
+	align-items: center;
+}
+
+.radio-button {
+	margin: 0;
+	margin-bottom: 2vw;
+	margin-right: 0.7vw;
+}
+
+textarea {
+	width: 100%;
+	word-wrap: normal;
+}
+
+.title {
+	margin: auto;
+	height: 5vw;
+	/**text-align: center;**/
+	display: flex;
+    /**justify-content: space-around;**/
+    align-items: center;
+	padding-left: 10px;
+}
+
+.input-text {
+	height: 3vw;
+	font-size: 20px;
+}
+
+.menu-item {
+	/**align-self: auto;
+	text-align: center;**/
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
