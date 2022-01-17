@@ -5,7 +5,13 @@
 	color: black;
 	background-color: white;
 	font-family: "Quicksand", sans-serif;
-	/**font-family: 'Arima Madurai', cursive;**/
+}
+
+.myform {
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1);
 }
 
 h1 {
@@ -14,11 +20,7 @@ h1 {
 
 .container {
 	padding: 20px;
-	float: left;
-}
-.content {
-	height: 10vw;
-	
+	margin-right: 0;
 }
 
 .radio-text {
@@ -26,9 +28,12 @@ h1 {
 }
 
 .radio-button {
-	margin: 0;
-	margin-bottom: 2vw;
-	margin-right: 0.7vw;
+	margin: 2vw;
+	margin-bottom: 0;
+	border: 0;
+	-ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
 }
 
 textarea {
@@ -39,38 +44,26 @@ textarea {
 .title {
 	margin: auto;
 	height: 5vw;
-	/**text-align: center;**/
 	display: flex;
-    /**justify-content: space-around;**/
     align-items: center;
 	padding-left: 10px;
 }
 
 .input-text {
 	height: 3vw;
-	font-size: 20px;
+	font-size: 2.5vw;
+	width: 50%;
 }
-
+input {
+}
 .menu-item {
-	/**align-self: auto;
-	text-align: center;**/
 	margin: auto;
 }
 
 
-@media (min-width: 992px) {
-	.col-lg-4 {width: 33.32%;}
-	.col-lg-12 {width: 100%;}
-}
 
-@media (min-width: 768px) and (max-width: 991px) {
-	.col-md-6 {width: 50%;}
-	.col-md-12 {width: 100%;}
-}
 
-@media (max-width: 767px) {
-	.col-sm-12 {width: 100%;}
-}
+
 
 
 
