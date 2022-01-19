@@ -77,8 +77,8 @@ textarea {
 .alertmsg {
 	min-height: 0;
     height: 1px;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
     color: darkred;
     font-weight: bold;
 }
