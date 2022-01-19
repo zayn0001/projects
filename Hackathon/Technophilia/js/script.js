@@ -1,4 +1,3 @@
-document.querySelector("#recurrance4").innerHTML = "checking"
 document.querySelector("#eventtype1").onclick = function() {  
     document.querySelector("#eventstarttime").value = '00:00';
     document.querySelector("#eventendtime").value = '23:59';
