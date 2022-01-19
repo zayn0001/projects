@@ -2,6 +2,7 @@ import csv
 import pandas as pd
 import glob   
 import basics3
+import math
 
 const_pngs = glob.glob("c:/Users/Mishal/Desktop/constellations/*.png")
 
@@ -23,10 +24,11 @@ for png in const_pngs:
 
 
 
-
+noofpredictors = math.factorial(basics3.NO_OF_POINTS)/(math.factorial(basics3.NO_OF_POINTS-2)*2)
+noofpredictors = int(noofpredictors)
 with open("mlforconsts.csv", "w") as csvfile:
     csvwriter = csv.writer(csvfile)
-    csvwriter.writerow(["predictor"]*(basics3.NO_OF_POINTS*(basics3.NO_OF_POINTS-1)))
+    csvwriter.writerow(["predictor"]*noofpredictors)
     csvwriter.writerows(predictors)
 
 data = pd.read_csv("mlforconsts.csv")

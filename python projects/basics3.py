@@ -1,6 +1,6 @@
 from PIL import Image, ImageOps, ImageEnhance
 
-NO_OF_POINTS = 5
+NO_OF_POINTS = 4
 
 checknorth = {"andromeda":True, "aries":True, "auriga":True, "bootes":True, "aquarius":True, "aquila":True, "ursa_major":True, "antlia":False, "apus":False, "ara":False}
 checksouth = {"aquarius":True, "aquila":True, "antlia":True, "apus":True, "ara":True, "andromeda":False, "aries":False, "auriga":False, "bootes":False, "ursa_major":False}
@@ -32,15 +32,20 @@ def get_normed_predictors(file, rotat=0, resize=True):
         for y in range(im.height):
             #if im.getpixel((x,y)) > 50: 
             starlist.append(Star(x,y,im.getpixel((x,y))))
+    
+      
 
     starlist.sort(reverse=True, key=lambda x: x.brightness)
     starlist = starlist[0:NO_OF_POINTS]
 
+  
     dbeo = []       #distances between each other
-    for star1 in starlist:
-        for star2 in starlist:
-            if star1 != star2:
-                dbeo.append(((star1.x-star2.x)**2 + (star1.y-star2.y)**2)**0.5)
+    for i in range(len(starlist)):
+        for j in range(len(starlist)):
+            if j > i:
+                #print((i,j))
+                dbeo.append(((starlist[i].x-starlist[j].x)**2 + (starlist[i].y-starlist[j].y)**2)**0.5)
+        
     #for star in starlist:
     #    dbeo.append(star.x-starlist[0].x)
     #    dbeo.append(star.y-starlist[0].y)
@@ -48,3 +53,5 @@ def get_normed_predictors(file, rotat=0, resize=True):
 
     normeddbeo = [float(i)/sum(dbeo) for i in dbeo]
     return normeddbeo
+
+test2 = get_normed_predictors("c:/Users/Mishal/Desktop/constellations/ursa_major.png")

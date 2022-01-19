@@ -74,6 +74,15 @@ textarea {
 	margin: auto;
 }
 
+.alertmsg {
+	min-height: 0;
+    height: 1px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    color: darkred;
+    font-weight: bold;
+}
+
 
 
 
