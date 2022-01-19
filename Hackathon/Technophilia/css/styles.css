@@ -88,6 +88,16 @@ textarea {
 	display: none;
 }
 
+.submit {
+	text-align: right;
+}
+
+.submit-button {
+	background-color: #E07A5F;
+    color: #3D405B;
+    width: 12vw;
+    height: 5vw;
+}
 
 
 
