@@ -81,6 +81,7 @@ textarea {
     padding-bottom: 0;
     color: darkred;
     font-weight: bold;
+	display: none;
 }
 
 .timeset {
