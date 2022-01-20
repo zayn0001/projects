@@ -76,7 +76,7 @@ function handleForm(form){
     }
     else {
         console.log("SUccesss!!!")
-        google.script.run.hello(form);
+        google.script.run.createEvent(form);
         location.replace("https://www.google.com/")
     }
 }
