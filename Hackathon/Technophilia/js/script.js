@@ -33,6 +33,27 @@ function disableButton(button) {
     document.querySelector(button).style["color"] = "#EBECF0";
 }
 
+function getClasses() {
+    classlist = document.querySelectorAll(".eventclass");
+    selectedClasses = []
+    for (const classcheckbox in classlist) {
+        if (classcheckbox.checked) {
+            selectedClasses.push(classcheckbox.value)
+        }
+    }
+}
+
+function getStudents (selectedClasses) {
+    var gueststudents = []
+    for (const guestclass in selectedClasses) {
+        $ajaxUtils.sendGetRequest("data/students.json", 
+        function(students){
+            gueststudents = gueststudents.concat(students[guestclass])
+        });
+    }
+    return guesttudents
+}
+
 function handleForm(form){
 
     var missing = false

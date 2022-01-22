@@ -32,7 +32,7 @@ h1 {
 	align-items: center;
 }
 
-.radio-button {
+.radio-button, .checkbox {
 	margin: 2vw;
 	margin-bottom: 0;
 	border: 0;
